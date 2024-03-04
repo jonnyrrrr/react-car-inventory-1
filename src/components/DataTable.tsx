@@ -45,14 +45,14 @@ function DataTable() {
         <div className="flex flex-row">
             <div>
                 <button
-                    className="p-3 bg-slate-800 text-white rounded m-3 hover:text-teal-500"
+                    className="p-3 bg-slate-800 text-white rounded m-3 hover:underline hover:text-teal-500"
                     onClick={() => handleOpen()}
                 >
-                    Add To Inventory
+                    Add To Inventory    <i className="fa-solid fa-plus"></i>
                 </button>
             </div> 
-            <Button onClick={handleOpen} className="p-3 bg-slate-800 text-white rounded m-3 hover:text-teal-500" >Update</Button>
-            <Button onClick={deleteData} className="p-3 bg-slate-800 text-white rounded m-3 hover:text-teal-500" >Delete</Button>
+            <Button onClick={handleOpen} className="p-3 bg-slate-800 text-white rounded m-3 hover:underline hover:text-green-700" >Update</Button>
+            <Button onClick={deleteData} className="p-3 bg-slate-800 text-white rounded m-3 hover:underline hover:text-red-700" >Delete</Button>
         </div>
         <div className={ open ? "hidden" : "container mx-10 my-5 flex flex-col"}
             style={{ height: 400, width: '100%'}}

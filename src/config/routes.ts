@@ -1,6 +1,7 @@
 
 import Home from '../pages/Home'
 import Dashboard from '../pages/Dashboard'
+import Conact from '../pages/Conact'
 
 interface RouteType {
     path: string,
@@ -20,6 +21,13 @@ const routes: RouteType[] = [
         path: "/dashboard",
         component: Dashboard,
         name: "DashBoard",
+        protected: false
+    
+      },
+      {
+        path: "/contact",
+        component: Conact,
+        name: "Contact Us",
         protected: false
     
       },

@@ -1,4 +1,4 @@
-
+import ContactForm from "./Contactfrom"
 
 type Props = {
     id? : any;
@@ -28,9 +28,9 @@ const Modal = ( props: Props ) => {
                             X
                         </p>
                     </div>
-                    {/* <div className="flex flex-col items-center text-center mt-3 p-2">
+                    <div className="flex flex-col items-center text-center mt-3 p-2">
                         <ContactForm id={props.id } />
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </div>
